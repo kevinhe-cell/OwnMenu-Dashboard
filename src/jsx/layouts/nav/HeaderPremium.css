@@ -1,0 +1,179 @@
+.hp-header {
+  border-bottom: 1px solid #eef2f7;
+  background: #fff !important;
+  box-shadow: none !important;
+}
+
+.hp-nav {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 0;
+  gap: 0.5rem;
+}
+
+.hp-page-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1e293b;
+  letter-spacing: -0.01em;
+  text-transform: capitalize;
+  line-height: 1.2;
+}
+
+.hp-icon-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: transparent;
+  color: #64748b;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.hp-icon-btn:hover {
+  background: #f1f5f9;
+  color: #dd2f6e;
+}
+
+.hp-profile-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.15rem 0.45rem 0.15rem 0.15rem;
+  border-radius: 999px;
+  border: 1px solid #e8edf3;
+  background: #fff;
+  cursor: pointer;
+  transition: border-color 0.15s ease;
+}
+
+.hp-profile-toggle:hover {
+  border-color: #f9a8d4;
+}
+
+.hp-avatar {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #dd2f6e;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.72rem;
+  flex-shrink: 0;
+}
+
+.hp-profile-name {
+  font-weight: 600;
+  color: #1e293b;
+  font-size: 0.8rem;
+  line-height: 1.15;
+  max-width: 140px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.hp-profile-role {
+  display: none;
+}
+
+.hp-time-filter {
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.35rem 0.75rem;
+  border: 1px solid #e8edf3;
+  border-radius: 12px;
+  background: #fafbfc;
+}
+
+.hp-time-filter-mobile {
+  margin: 0 1.25rem 0.85rem;
+  width: calc(100% - 2.5rem);
+}
+
+.hp-time-icon {
+  color: #dd2f6e;
+  flex-shrink: 0;
+}
+
+.hp-time-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 0;
+}
+
+.hp-time-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #94a3b8;
+}
+
+.hp-time-inputs {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.hp-time-inputs input[type="date"] {
+  border: 0;
+  background: transparent;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #0f172a;
+  padding: 0;
+  max-width: 118px;
+}
+
+.hp-time-inputs input[type="date"]:focus {
+  outline: none;
+}
+
+.hp-time-sep {
+  color: #94a3b8;
+  font-size: 0.8rem;
+}
+
+.hp-time-presets {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .hp-time-presets {
+    display: inline-flex;
+    gap: 2px;
+    margin-top: 0.15rem;
+  }
+
+  .hp-time-presets button {
+    border: 0;
+    background: transparent;
+    color: #94a3b8;
+    font-size: 0.65rem;
+    font-weight: 700;
+    padding: 0.1rem 0.35rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .hp-time-presets button.active {
+    background: #fce7f0;
+    color: #dd2f6e;
+  }
+}
+
+.hp-time-range-text {
+  font-size: 0.75rem;
+  color: #64748b;
+  white-space: nowrap;
+  margin-left: 0.25rem;
+}
